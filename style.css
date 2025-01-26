@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    font-family: 'Quicksand';
+}
+body{
+    margin: 15px 0px;
+    background-image: url(assets/bg.png);
+}
+nav{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    gap:5px;
+}
+.logo img{
+    width: 62px;
+    height: 62px;
+}
+.logo h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.links ul{
+    display: flex;
+    gap: 50px;
+}
+.links ul li,
+.links ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#a a{
+    color: orange;
+}
+#b a{
+    color: skyblue;
+}
+#c a{
+    color: #05D4DF;
+}
+#d a{
+    color: #5D58EF;
+}
+.btn{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+    border-radius: 12px;
+    border: none;
+    width: 180px;
+}
+
+.ham img,hr{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 750px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo h3,.links,.contact{
+        display: none;
+    }
+    .ham img{
+        width: 20px;
+        height: 20px;
+        display:flex;
+        padding-top: 20px;
+    }
+    nav{
+        margin-left: -100px;
+        margin-right: -100px;
+        padding:10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    hr{
+        display: block;
+        color: orange;
+    }
+}
+
