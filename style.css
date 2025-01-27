@@ -8,16 +8,10 @@
 }
 *{
     font-family: 'Quicksand';
-    
     margin: 5px 10px;
 }
 header{
     background-color: #FFFFFF;
-}
-.banner,
-.curriculum,
-.stories{
-    background-image: url(assets/bg.png);
 }
 nav{
     padding: 10px 50px;
@@ -49,10 +43,12 @@ nav{
     font-weight: 700;
 }
 
-#a a{
+#a a,
+.aa{
     color: orange;
 }
-#b a{
+#b a,
+.bb{
     color: skyblue;
 }
 #c a{
@@ -70,6 +66,25 @@ nav{
     border-radius: 12px;
     border: none;
     width: 180px;
+}
+.banner{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.curriculum,
+.stories{
+    background-image: url('assets/bg.png');
+}
+.btn-primary{
+    padding: 10px 1px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    width: 120px;
 }
 
 .ham img,hr{
