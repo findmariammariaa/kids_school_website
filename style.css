@@ -73,9 +73,11 @@ nav,
     width: 180px;
 }
 
-.curriculum,
-.stories{
+.curriculum{
     background-image: url('assets/bg.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
 }
 .btn-primary{
     padding: 10px 1px;
@@ -114,12 +116,14 @@ p{
     padding-right: 50px;
 }
 
-.curriculum{
+.curriculum,
+.stories{
     display: block;
     text-align: center;
     margin: 0px 100px;
 }
-.curriculum h1{
+.curriculum h1,
+.stories h1{
     font-size: 2.5rem;
     font-weight: 700;
     margin: 60px;
@@ -136,9 +140,7 @@ p{
     text-align: center;
     justify-content: center;
     display: block;
-    width: 280px;
-    stroke: #DEF5FF;
-    stroke-width: 100%;
+    width: 290px;
     padding: 40px 20px;
 }
 .p{
@@ -176,8 +178,45 @@ p{
     border: none;
     width: 50px;
     height: 50px;
+    margin: 5px;
+}
+.stories {
+    background: 
+        linear-gradient(360deg, rgba(255, 244, 220, 0.8), rgba(255, 255, 255, 0.6)), 
+        url('assets/bg.png'); /* Your background image */
+/* Prevents tiling */
 }
 
+.scards{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.bigcard{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 19px;
+    text-align: left;
+    justify-content: left;
+    display: block;
+    width: 50%;
+    background-color: white;
+}
+.smallcards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.scard{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 19px;
+    text-align: left;
+    justify-content: left;
+    display: block;
+}
+.stories img,
+.scard img{
+    margin: 0px;
+}
 @media screen and (max-width: 750px){
     *{
         margin: 5px;
