@@ -55,7 +55,8 @@ nav,
 #c a{
     color: #05D4DF;
 }
-#d a{
+#d a,
+.d{
     color: #5D58EF;
 }
 .bb{
@@ -85,7 +86,7 @@ nav,
     border-radius: 12px;
     border: none;
     width: 120px;
-    margin: 5px;
+    margin: 15px;
 }
 
 .ham img{
@@ -113,9 +114,69 @@ p{
     padding-right: 50px;
 }
 
-
-
-
+.curriculum{
+    display: block;
+    text-align: center;
+    margin: 0px 100px;
+}
+.curriculum h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 60px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 19px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    width: 280px;
+    stroke: #DEF5FF;
+    stroke-width: 100%;
+    padding: 40px 20px;
+}
+.p{
+    
+    background: linear-gradient(180deg, #DEF5FF, #FFFFFF);
+}
+.q{
+    
+    background: linear-gradient(180deg, #FFF4DC, #FFFFFF);
+}
+.r{
+    
+    background: linear-gradient(180deg, #F2E8FF, #FFFFFF);
+}
+.card h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px;
+}
+.card p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+    margin: 15px;
+}
+.card h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+.b{
+    border-radius: 100%;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
 
 @media screen and (max-width: 750px){
     *{
@@ -163,5 +224,19 @@ p{
         font-size: 14px;
         font-weight: 500;
     }
+    .curriculum,.cards{
+        margin: 0px;
+        justify-content: center;
+        text-align:center;
+        gap: 20px;
+    }
+    .curriculum h1{
+        font-size: 24px;
+        margin: 15px;
+    }
+    .next{
+        display: none;
+    }
+
 }
 
