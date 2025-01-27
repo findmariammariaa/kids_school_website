@@ -13,8 +13,10 @@
 header{
     background-color: #FFFFFF;
 }
-nav{
-    padding: 10px 50px;
+nav,
+.banner{
+    margin: 0px 100px;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -67,18 +69,14 @@ nav{
     border: none;
     width: 180px;
 }
-.banner{
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-around;
-}
+
 .curriculum,
 .stories{
     background-image: url('assets/bg.png');
 }
 .btn-primary{
     padding: 10px 1px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     color: white;
     background-color: black;
@@ -90,7 +88,27 @@ nav{
 .ham img,hr{
     display: none;
 }
-
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.title h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+}
+.aa{
+    margin: 0px;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner img{
+    padding-right: 50px;
+}
 
 
 
