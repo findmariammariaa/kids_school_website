@@ -8,15 +8,25 @@
 }
 *{
     font-family: 'Quicksand';
-    margin: 5px 10px;
+    margin: 5px 0px;
+}
+html{
+    margin: 0px;
+}
+
+.banner,
+nav{
+    padding: 0px 120px;
 }
 header{
     background-color: #FFFFFF;
 }
-nav,
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+}
 .banner{
-    margin: 0px 100px;
-    padding: 0px 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -87,8 +97,8 @@ nav,
     background-color: black;
     border-radius: 12px;
     border: none;
-    width: 120px;
-    margin: 15px;
+    width: 150px;
+    margin: 20px 0px;
 }
 
 .ham img{
@@ -97,7 +107,6 @@ nav,
 .title{
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
 }
 .title h1{
@@ -113,14 +122,13 @@ p{
     font-weight: 400;
 }
 .banner img{
-    padding-right: 50px;
+padding-right: 10px;
 }
 
 .curriculum,
 .stories{
     display: block;
     text-align: center;
-    margin: 0px 100px;
 }
 .curriculum h1,
 .stories h1{
@@ -131,8 +139,7 @@ p{
 .cards{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 60px;
+    margin: 30px;
 }
 .card{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -142,6 +149,7 @@ p{
     display: block;
     width: 290px;
     padding: 40px 20px;
+    margin: 0px;
 }
 .p{
     
@@ -180,11 +188,11 @@ p{
     height: 50px;
     margin: 5px;
 }
-.stories {
-    background: 
-        linear-gradient(360deg, rgba(255, 244, 220, 0.8), rgba(255, 255, 255, 0.6)), 
-        url('assets/bg.png'); /* Your background image */
-/* Prevents tiling */
+.stories{
+    background: linear-gradient(360deg,rgba(255, 244, 220, 0.5),#ffffff),url('assets/bg.png');
+    background-blend-mode: overlay;
+    margin: 0px;
+    padding: 5px 120px;
 }
 
 .scards{
@@ -200,6 +208,8 @@ p{
     display: block;
     width: 50%;
     background-color: white;
+    margin: 20px;
+    overflow: hidden;
 }
 .smallcards{
     display: grid;
@@ -210,12 +220,50 @@ p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 19px;
     text-align: left;
-    justify-content: left;
-    display: block;
+    align-items: center;
+    margin: 20px;
 }
-.stories img,
+.scard h4{
+    padding: 0px 20px 10px;
+}
+.bigcard img,
 .scard img{
     margin: 0px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.big,
+.big h2,
+.big p{
+    padding: 20px;
+}
+.big p{
+    font-size: 1rem;
+    color: #666666;
+}
+.date{
+    border-radius: 50px;
+    width: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-self:center;
+    position: relative;
+    z-index: 1;
+}
+.big .date{
+    bottom: 50px;
+    right: 50px;
+    background-color: #3CD8E8;
+    color: white;
+}
+.scard .date{
+    bottom: 35px;
+    right: 30px;
+    color: white;
+    background-color: #95B226;
+}
+#purple{
+    background-color: #5D58F0;
 }
 @media screen and (max-width: 750px){
     *{
