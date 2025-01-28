@@ -98,7 +98,7 @@ nav{
     border-radius: 12px;
     border: none;
     width: 150px;
-    margin: 20px 0px;
+    margin: 60px 0px;
 }
 
 .ham img{
@@ -189,7 +189,7 @@ padding-right: 10px;
     margin: 5px;
 }
 .stories{
-    background: linear-gradient(360deg,rgba(255, 244, 220, 0.5),#ffffff),url('assets/bg.png');
+    background: linear-gradient(360deg,rgba(254, 163, 1, 0.3),#ffffff),url('assets/bg.png');
     background-blend-mode: overlay;
     margin: 0px;
     padding: 5px 120px;
@@ -267,11 +267,11 @@ padding-right: 10px;
 }
 @media screen and (max-width: 750px){
     *{
-        margin: 5px;
-    }
-    body{
         margin: 0px;
-        padding:0px;
+    }
+    html,body{
+        margin: 0px;
+        padding: 0px;
     }
     .logo h3,.links,.contact{
         display: none;
@@ -285,7 +285,6 @@ padding-right: 10px;
     nav{
         display: flex;
         justify-content: space-between;
-        margin: -10px;
         padding: 5px;
         border-bottom: orange solid;
     }
@@ -294,6 +293,7 @@ padding-right: 10px;
         margin: 0px;
         justify-content: center;
         text-align:center;
+        padding: 10px;
     }
     .banner img{
         width: 100%;
@@ -312,17 +312,44 @@ padding-right: 10px;
         font-weight: 500;
     }
     .curriculum,.cards{
-        margin: 0px;
+        flex-direction: column;
         justify-content: center;
         text-align:center;
+        padding: 5px;
         gap: 20px;
     }
-    .curriculum h1{
+    .curriculum h1,
+    .stories h1{
         font-size: 24px;
         margin: 15px;
     }
-    .next{
+    .cards{
+        align-content: center;
+        margin: 30px;
+    }
+    .next,.bigcard,.hide{
         display: none;
+    }
+    .stories{
+        padding: 0px;
+    }
+    .smallcards{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px;
+    }
+    .scard{
+        margin: 10px;
+    }
+    .scard h4{
+        padding: 10px;
+    }
+    .date{
+        font-size: 10px;
+        padding: 10px;
+        top: -20px;
+    }
+    .btn-primary{
+        margin: 15px;
     }
 
 }
